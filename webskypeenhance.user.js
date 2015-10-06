@@ -9,5 +9,5 @@
 try {
   GM_addStyle(":root .swx .callScreen { display: none; } :root .swx a:visited { color: #008a99 !important; }");
 } catch (e) {
-  consle.log("ERROR" e.name + ": " + e.message);
+  consle.log("ERROR" + e.name + ": " + e.message);
 }
