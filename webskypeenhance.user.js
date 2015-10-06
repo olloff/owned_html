@@ -6,4 +6,8 @@
 // @grant       GM_addStyle
 // ==/UserScript==
 
-GM_addStyle(":root .swx .callScreen { display: none; } a:visited { color: #008a99 !important; }");
+try {
+  GM_addStyle(":root .swx .callScreen { display: none; } :root .swx a:visited { color: #008a99 !important; }");
+} catch (e) {
+  consle.log("ERROR" e.name + ": " + e.message);
+}
